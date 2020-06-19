@@ -1,0 +1,172 @@
+* { box-sizing: border-box; }
+body1 {
+  margin: 0;
+  background: radial-gradient(#BFD6E2 1px, rgba(255,255,255,0) 2px);
+  background-size: 10px 10px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  transition: 0.1s ease-in-out;
+}
+.topmenu {
+  backface-visibility: hidden;
+  background: rgba(255,255,255,.8);
+  padding: 10px 10px 0px 10px;
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+  padding: 0 0px 0 0;
+}
+.topmenu > li > a {
+  font-family: 'Exo 2', sans-serif;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 19px;     /*ВОТ ТУТ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  font-weight: bold;
+  color: #003559;
+  text-transform: uppercase;
+}
+
+.down {
+	font-size: 17px;
+	padding: 30px;
+}
+
+
+.topmenu li a:hover { color: #E6855F; }
+.submenu {
+  background: white;
+  border: 2px solid #003559;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  width: 150px;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transition: .6s ease-in-out;
+}
+.topmenu > li:hover .submenu{
+  visibility: visible;
+  opacity: 1;
+  transform: perspective(600px) rotateX(0deg);
+}
+.submenu li a {
+  color: #7f7f7f;
+  font-size: 16px;
+  line-height: 36px;
+  padding: 0 25px 0px 5px;
+  font-family: "Open Sans",sans-serif;
+  font-style: italic;
+  position: relative;
+  font-weight: bold;
+  color: #00008B;
+}
+
+body{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #98FB98;
+}
+
+header {
+    background-color: white;
+}
+.about-section{
+    background-size: 100%;
+    padding: 1px 30px 30px;
+}
+
+.inner-container{
+    width: 100%;
+    height: 610px;
+    background-color: white;
+    padding: 20px 5px;
+}
+
+.mainLeft{
+  padding: 5px 10px 5px 0; 
+}
+
+
+.leftline1 {
+  border-right: 1px solid;
+  padding: 0 40px;
+}
+
+.table{
+  height: 60px;
+  padding: 1px 0 0 0;
+}
+footer{
+  padding-left: 0px;
+}
+
+.wrapper{
+  width:1098px;
+  height:120px;
+  border: 0 solid black;
+  position: relative;
+  margin:0 auto;
+  overflow: hidden;
+}
+.slider{
+  position: absolute;
+  height:100%;
+  top:0;
+  left:0;
+  width:1200px;
+  animation: 9s slider linear infinite alternate;
+}
+.block{
+  width:400px;
+  height:1500;
+  border:0px solid white;
+  box-sizing: border-box;
+  float:left;
+  text-align: center;
+}
+@keyframes slider{
+  0%{
+    left:0px;
+  }
+  50%{
+    left:-104px;
+  }
+  100%{
+    left:-0px;
+  }
+}
+
+.telle {
+  font-size: 14px;
+}
+
+.forma {
+  text-align: center;
+}
+
+.mesto {
+  text-decoration: none;
+  color: #003559;
+}
+
+.mesto:hover {
+  color: orange;
+}
+
+span{
+  font-family: Arial Unicode MS;
+  font-size: 17px;"
+}
